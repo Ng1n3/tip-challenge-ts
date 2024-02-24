@@ -1,7 +1,11 @@
 import React from "react";
 
-const Reset = () => {
+interface resetProp {
+  onReset: () => void
+}
 
+const Reset = ({onReset}: resetProp) => {
+  return <button onClick={onReset}>Reset</button>
 }
 
 export default Reset
